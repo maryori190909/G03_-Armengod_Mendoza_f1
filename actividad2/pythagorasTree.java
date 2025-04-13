@@ -1,5 +1,8 @@
 package actividad2;
 
-public class pythagorasTree {
+import java.awt.*;
+import javax.swing.*;
+public class pythagorasTree extends JPanel{
+    private int profundidad;
 
 }
