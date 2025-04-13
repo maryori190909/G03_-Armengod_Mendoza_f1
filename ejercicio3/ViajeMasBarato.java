@@ -41,7 +41,7 @@ public class ViajeMasBarato {
                     System.out.printf("%4d", valor);
                 }
             }
-            
+            System.out.println();
         }
     }
 }
