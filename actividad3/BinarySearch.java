@@ -11,7 +11,7 @@ public class BinarySearch {
         return binarySearch(arr, mid + 1, hi, x);
     }
     return -1;
-}
+    }
 }
 public static void main(String[] args){
     BinarySearch ob = new BinarySearch();
@@ -19,5 +19,9 @@ public static void main(String[] args){
     int n = arr.length;
     int x = 4;
     int position = ob.binarySearch(arr, 0, n - 1, x);
-
+    if (position == -1){
+    System.out.println("Elemento no presente");}
+    else{
+    System.out.println("Element found at index:" + position);
+    }
 }
