@@ -15,7 +15,13 @@ public class ModaCalculador {
         for (int num : arreglo) {
             int frecuenciaActual = frecuencias.getOrDefault(num, 0) + 1;
             frecuencias.put(num, frecuenciaActual);
+        
+            if (frecuenciaActual > maxFrecuencia) {
+                maxFrecuencia = frecuenciaActual;
+                moda = num;
         }
     }
+    return moda;
+}
 }
 
