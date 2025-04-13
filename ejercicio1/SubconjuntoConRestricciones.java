@@ -14,6 +14,10 @@ public class SubconjuntoConRestricciones {
         if (esPotenciaDe2(actual)) {
             return puedeSumar(arr, pos + 1, objetivo - actual);
         }
+        if (actual % 5 == 0 && pos + 1 < arr.length && arr[pos + 1] % 2 != 0) {
+            return puedeSumar(arr, pos + 1, objetivo); // se salta
+        }
+        return puedeSumar(arr, pos + 1, objetivo - actual) || puedeSumar(arr, pos + 1, objetivo);
 
-}
+    }
 }
