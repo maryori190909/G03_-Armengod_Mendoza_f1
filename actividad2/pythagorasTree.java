@@ -23,5 +23,10 @@ public class pythagorasTree extends JPanel{
 
         int x2 = x + (int)(lado * Math.cos(Math.toRadians(angulo)));
         int y2 = y + (int)(lado * Math.sin(Math.toRadians(angulo)));
+        float ratio = (float) nivel / profundidad;
+        Color color = new Color((int)(100 + 155 * (1 - ratio)), (int)(200 * ratio), 50);
+        g.setColor(color);
+        g.setStroke(new BasicStroke(nivel));
+        g.drawLine(x, y, x2, y2);
     }
 }
