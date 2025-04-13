@@ -19,6 +19,9 @@ public class pythagorasTree extends JPanel{
         trazaArbol(g2d, getWidth() / 2, getHeight() - 50, 120, -90, profundidad);
     }
     private void trazaArbol(Graphics2D g, int x, int y, int lado, double angulo, int nivel) {
-        
+        if (nivel == 0 || lado < 2) return;
+
+        int x2 = x + (int)(lado * Math.cos(Math.toRadians(angulo)));
+        int y2 = y + (int)(lado * Math.sin(Math.toRadians(angulo)));
     }
 }
