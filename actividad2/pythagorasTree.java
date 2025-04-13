@@ -15,8 +15,10 @@ public class pythagorasTree extends JPanel{
         Graphics2D g2d = (Graphics2D) g;
         g2d.setColor(new Color(25, 25, 25));
         g2d.fillRect(0, 0, getWidth(), getHeight());
-        
+
         trazaArbol(g2d, getWidth() / 2, getHeight() - 50, 120, -90, profundidad);
     }
-
+    private void trazaArbol(Graphics2D g, int x, int y, int lado, double angulo, int nivel) {
+        
+    }
 }
