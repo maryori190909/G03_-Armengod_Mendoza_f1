@@ -25,6 +25,8 @@ public class SubconjuntoConRestricciones {
         int n = entrada[0];
         int objetivo = entrada[entrada.length - 1];
         if (n <= 0 || n + 2 != entrada.length) return false;
+        int[] numeros = Arrays.copyOfRange(entrada, 1, 1 + n);
+        return puedeSumar(numeros, 0, objetivo);
 
     }
 }
