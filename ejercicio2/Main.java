@@ -7,6 +7,13 @@ public class Main {
             {4,2,7,10,4,1,6},
             {9,2,7,1,7}
         };
+        int[] ks = {3, 5, 4};
+
+        for (int i = 0; i < arreglos.length; i++) {
+            int[] arr = arreglos[i];
+            int k = ks[i];
+            
+        }
     }
 
 }
