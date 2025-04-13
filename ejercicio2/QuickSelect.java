@@ -14,5 +14,7 @@ public class QuickSelect {
         swap(arr, i + 1, high);
         return i + 1;
     }
-    
+    public static int quickSelect(int[] arr, int low, int high, int k) {
+        
+    }
 }
