@@ -24,6 +24,7 @@ public class SubconjuntoConRestricciones {
         if (entrada.length < 3) return false;
         int n = entrada[0];
         int objetivo = entrada[entrada.length - 1];
+        if (n <= 0 || n + 2 != entrada.length) return false;
 
     }
 }
