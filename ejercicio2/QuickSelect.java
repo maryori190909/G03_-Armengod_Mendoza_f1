@@ -15,6 +15,16 @@ public class QuickSelect {
         return i + 1;
     }
     public static int quickSelect(int[] arr, int low, int high, int k) {
+        if (low <= high) {
+            int pivotIndex = partition(arr, low, high);
+            if (pivotIndex == k) {
+                return arr[pivotIndex];
+            } else if (pivotIndex > k) {
+                return quickSelect(arr, low, pivotIndex - 1, k);
+            } else {
+                return quickSelect(arr, pivotIndex + 1, high, k);
+            }
+        }
         
     }
 }
