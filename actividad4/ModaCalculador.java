@@ -11,6 +11,11 @@ public class ModaCalculador {
         Map<Integer, Integer> frecuencias = new HashMap<>();
         int moda = arreglo[0];
         int maxFrecuencia = 1;
+
+        for (int num : arreglo) {
+            int frecuenciaActual = frecuencias.getOrDefault(num, 0) + 1;
+            frecuencias.put(num, frecuenciaActual);
+        }
     }
 }
 
