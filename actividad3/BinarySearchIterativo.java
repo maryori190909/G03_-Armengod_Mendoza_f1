@@ -15,4 +15,7 @@ public class BinarySearchIterativo {
         return -1;
     }
 }
+public static void main(String[] args){
+    
+}
 
