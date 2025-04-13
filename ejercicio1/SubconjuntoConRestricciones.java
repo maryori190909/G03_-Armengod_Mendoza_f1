@@ -20,4 +20,8 @@ public class SubconjuntoConRestricciones {
         return puedeSumar(arr, pos + 1, objetivo - actual) || puedeSumar(arr, pos + 1, objetivo);
 
     }
+    public static boolean verificarSuma(int[] entrada) {
+        if (entrada.length < 3) return false;
+        
+    }
 }
