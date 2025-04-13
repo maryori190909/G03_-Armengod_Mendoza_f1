@@ -10,6 +10,9 @@ public class Main {
             { 0,0,0,0,2 },
             { 0,0,0,0,0 }
         };
+        System.out.println("matriz de tarifas directas :");
+        ViajeMasBarato.mostrarMatriz(T);
+
     }
 
 }
