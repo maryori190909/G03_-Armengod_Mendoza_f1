@@ -8,6 +8,9 @@ public class Hanoi {
         if (discos == 1){
             System.out.println("Mover el disco de la torre " + torre1 + " a la torre " + torre3);
         } else{
+            torresHanoi(discos -1, torre1, torre3,torre2);
+            System.out.println("mover el disco de la torre "+ torre1 + " a la torre " + torre3);
+            torresHanoi(discos -1, torre2, torre1, torre3);
 }
     }
 }
