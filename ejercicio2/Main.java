@@ -12,7 +12,12 @@ public class Main {
         for (int i = 0; i < arreglos.length; i++) {
             int[] arr = arreglos[i];
             int k = ks[i];
-            
+            try {
+                int resultado = QuickSelect.findKthSmallest(arr, k);
+                System.out.println("entrada: " + Arrays.toString(arr) + ", k = " + k);
+                System.out.println("el " + k + " elemento mas pequeno es: " + resultado);
+            }
+
         }
     }
 
