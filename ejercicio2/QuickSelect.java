@@ -11,7 +11,8 @@ public class QuickSelect {
                 swap(arr, i, j);
             }
         }
-        
+        swap(arr, i + 1, high);
+        return i + 1;
     }
-
+    
 }
