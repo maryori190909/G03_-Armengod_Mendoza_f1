@@ -28,7 +28,8 @@ public class ViajeMasBarato {
         }
         return C;
     }
+    private static boolean esCaminoValido(int a, int b) {
+        return a != Integer.MAX_VALUE && b != Integer.MAX_VALUE;
+    }
     
-    
-
 }
