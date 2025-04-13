@@ -17,8 +17,10 @@ public class Main {
                 System.out.println("entrada: " + Arrays.toString(arr) + ", k = " + k);
                 System.out.println("el " + k + " elemento mas pequeno es: " + resultado);
             }
+            catch (IllegalArgumentException e) {
+                System.out.println("error: " + e.getMessage());
+            }
 
         }
     }
-
 }
