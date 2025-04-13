@@ -2,7 +2,7 @@ package actividad4;
 
 public class Moda2 {
     if (array.length == 0) {
-        throw new IllegalArgumentException("El arreglo no puede estar vacío.");
+        throw new IllegalArgumentException("el arreglo no puede estar vacio.");
     }
     int i = 1;
     int inicio = 0;
@@ -14,7 +14,16 @@ public class Moda2 {
         if (array[i] == array[inicio]) {
             frecuencia++;
         }
-        
+        else {
+            if (frecuencia > maxFrecuencia) {
+                maxFrecuencia = frecuencia;
+                moda = array[inicio];
+            }
+            inicio = i;
+            frecuencia = 1;
+        }
+    i++;
     }
+
 
 }
