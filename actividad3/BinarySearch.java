@@ -14,5 +14,10 @@ public class BinarySearch {
 }
 }
 public static void main(String[] args){
+    BinarySearch ob = new BinarySearch();
+    int arr[] = { 1, 2, 3, 4, 5 };
+    int n = arr.length;
+    int x = 4;
+    int position = ob.binarySearch(arr, 0, n - 1, x);
 
 }
