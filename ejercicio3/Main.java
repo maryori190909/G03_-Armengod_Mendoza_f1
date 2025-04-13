@@ -13,6 +13,8 @@ public class Main {
         System.out.println("matriz de tarifas directas :");
         ViajeMasBarato.mostrarMatriz(T);
         int[][] C = ViajeMasBarato.calcularCostosMinimos(T);
+        System.out.println("\nmatriz de Costos Minimos es :");
+        ViajeMasBarato.mostrarMatriz(C);
 
     }
 
