@@ -12,3 +12,6 @@ public class dpSolution {
         return subSolutions[rodLength];
     }
 }
+public static void main(String[] args) {
+    
+}
