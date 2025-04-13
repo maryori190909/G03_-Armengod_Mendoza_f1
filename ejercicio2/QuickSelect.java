@@ -34,5 +34,9 @@ public class QuickSelect {
         int[] copia = Arrays.copyOf(arr, arr.length);
         return quickSelect(copia, 0, copia.length - 1, k - 1);
     }
-    
+    private static void swap(int[] arr, int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
 }
