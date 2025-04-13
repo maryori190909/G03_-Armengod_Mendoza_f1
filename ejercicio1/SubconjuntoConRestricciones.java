@@ -22,6 +22,8 @@ public class SubconjuntoConRestricciones {
     }
     public static boolean verificarSuma(int[] entrada) {
         if (entrada.length < 3) return false;
-        
+        int n = entrada[0];
+        int objetivo = entrada[entrada.length - 1];
+
     }
 }
