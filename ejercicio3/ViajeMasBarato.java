@@ -19,11 +19,14 @@ public class ViajeMasBarato {
         for (int i = n - 2; i >= 0; i--) {
             for (int j = i + 1; j < n; j++) {
                 for (int k = i + 1; k < j; k++) {
-                    
-
+                    if (esCaminoValido(T[i][k], C[k][j])) {
+                        int costoConEscala = T[i][k] + C[k][j];
+                        C[i][j] = Math.min(C[i][j], costoConEscala);
+                    }
                 }
             }
         }
+        
     }
     
 
