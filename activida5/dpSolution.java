@@ -13,5 +13,8 @@ public class dpSolution {
     }
 }
 public static void main(String[] args) {
-    
+    int[] values = new int[]{3, 7, 1, 3, 9};
+        int rodLength = values.length;
+        System.out.println("el valor maximo es: " + getValue(values, rodLength));
+
 }
