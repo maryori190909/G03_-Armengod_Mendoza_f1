@@ -28,5 +28,10 @@ public class pythagorasTree extends JPanel{
         g.setColor(color);
         g.setStroke(new BasicStroke(nivel));
         g.drawLine(x, y, x2, y2);
+
+        int nuevoLado = (int)(lado * 0.7);
+        trazaArbol(g, x2, y2, nuevoLado, angulo - 30, nivel - 1);
+        trazaArbol(g, x2, y2, nuevoLado, angulo + 30, nivel - 1);
     }
+    
 }
