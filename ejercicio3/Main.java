@@ -12,6 +12,7 @@ public class Main {
         };
         System.out.println("matriz de tarifas directas :");
         ViajeMasBarato.mostrarMatriz(T);
+        int[][] C = ViajeMasBarato.calcularCostosMinimos(T);
 
     }
 
