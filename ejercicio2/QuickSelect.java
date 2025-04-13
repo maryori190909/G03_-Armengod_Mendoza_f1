@@ -25,6 +25,10 @@ public class QuickSelect {
                 return quickSelect(arr, pivotIndex + 1, high, k);
             }
         }
-        
+        return -1;
     }
+    public static int findKthSmallest(int[] arr, int k) {
+        if (arr == null || arr.length == 0 || k <= 0 || k > arr.length) {
+            throw new IllegalArgumentException("el parametro k es invalido o el arreglo esta vacio.");
+        }
 }
