@@ -32,6 +32,9 @@ public class ViajeMasBarato {
         return a != Integer.MAX_VALUE && b != Integer.MAX_VALUE;
     }
     public static void mostrarMatriz(int[][] M) {
-        
+        System.out.println("\nmatriz es :");
+        for (int[] fila : M) {
+
+        }
     }
 }
