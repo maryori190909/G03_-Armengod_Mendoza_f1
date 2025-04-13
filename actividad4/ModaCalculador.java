@@ -26,6 +26,8 @@ public class ModaCalculador {
 }
 
 public static void main(String[] args) {
-    
+    int[] datos = {3, 2, 2, 5, 3, 2, 1, 2, 5};
+    int resultado = calcularModa(datos);
+    System.out.println("la moda es: " + resultado);
 }
 
