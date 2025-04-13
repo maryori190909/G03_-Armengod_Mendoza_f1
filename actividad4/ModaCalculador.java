@@ -25,3 +25,7 @@ public class ModaCalculador {
 }
 }
 
+public static void main(String[] args) {
+    
+}
+
