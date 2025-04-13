@@ -31,4 +31,8 @@ public class QuickSelect {
         if (arr == null || arr.length == 0 || k <= 0 || k > arr.length) {
             throw new IllegalArgumentException("el parametro k es invalido o el arreglo esta vacio.");
         }
+        int[] copia = Arrays.copyOf(arr, arr.length);
+        return quickSelect(copia, 0, copia.length - 1, k - 1);
+    }
+    
 }
