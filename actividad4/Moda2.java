@@ -24,6 +24,8 @@ public class Moda2 {
         }
     i++;
     }
-
-
+    if (frecuencia > maxFrecuencia) {
+        moda = array[inicio];
+    }
+    return moda;
 }
