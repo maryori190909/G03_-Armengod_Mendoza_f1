@@ -21,5 +21,10 @@ public static void main(String[] args){
     int n = arr.length;
     int x = 3;
     int position = ob.binarySearch(arr, x);
+    if (position == -1){
+    System.out.println("Element not present");
+    }else{
+    System.out.println("Element found at index:" + position);
+    }
 }
 
