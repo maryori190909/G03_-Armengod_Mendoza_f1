@@ -10,6 +10,10 @@ public class SubconjuntoConRestricciones {
         if (pos == arr.length) {
             return objetivo == 0;
         }
+        int actual = arr[pos];
+        if (esPotenciaDe2(actual)) {
+            return puedeSumar(arr, pos + 1, objetivo - actual);
+        }
 
 }
 }
